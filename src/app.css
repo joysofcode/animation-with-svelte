@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
+
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+	width: 1px;
+	background-color: hsl(220 20% 14%);
+}
+
+html,
+body {
+	height: 100%;
+}
+
+body {
+	display: grid;
+	place-content: center;
+	font-family: 'Poppins', sans-serif;
+	color: hsl(220 20% 98%);
+	background-image: linear-gradient(
+		to right top,
+		hsl(220 20% 14%),
+		hsl(220 20% 18%)
+	);
+	background-attachment: fixed;
+}
+
+h1 {
+	max-width: 800px;
+	margin-bottom: 4rem;
+	font-size: 3rem;
+	font-weight: 900;
+}
+
+a {
+	color: white;
+	text-decoration: none;
+}
+
+a:hover {
+	color: aquamarine;
+}
+
+input,
+button {
+	padding: 0.6rem 1rem;
+	font: inherit;
+	border-radius: 20px;
+	border: none;
+	box-shadow: 0 0 10px hsl(0 0% 0% / 10%);
+}
+
+input {
+	max-width: 280px;
+	color: hsl(220 20% 98%);
+	background-color: hsl(220 20% 24%);
+}
+
+button {
+	display: grid;
+	place-content: center;
+	font-weight: 600;
+	cursor: pointer;
+}
+
+details > summary {
+	list-style-type: '👉️ ';
+}
+
+details[open] > summary {
+	list-style-type: '👇️ ';
+}
+
+details > summary {
+	font-weight: 700;
+	font-size: 2rem;
+	margin-bottom: 3rem;
+}
+
+hr {
+	margin-bottom: 3rem;
+	border: 1px solid hsl(220 20% 20%);
+}
